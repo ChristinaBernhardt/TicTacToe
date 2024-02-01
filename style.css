@@ -1,0 +1,74 @@
+
+body{
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+}
+
+h1{
+    text-align: center;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0; /* Verhindert den Abstand zwischen den Zellen */
+    margin: 20px; /* Fügt einen äußeren Rand zur Tabelle hinzu */
+}
+th, td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer; /* Zeigt an, dass die Zellen anklickbar sind */
+}
+
+td {
+    border: 1px solid white; /* Weiße Border der Zellen */
+    width: 50px;
+    height: 50px;
+    border: 1px solid white; /* Weiße Border der Zellen */
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer; /* Zeigt an, dass die Zellen anklickbar sind */
+}
+
+td:hover {
+    background-color: #f2f2f2; /* Hintergrundfarbe ändert sich beim Überfahren mit der Maus */
+}
+
+/* Fügt eine Farbe für den 'O'-Kreis hinzu */
+td[data-value="circle"] {
+    color: #4CAF50;
+}
+
+/* Fügt eine Farbe für das 'X'-Kreuz hinzu */
+td[data-value="cross"] {
+    color: #f44336;
+}
+table {
+    border-collapse: collapse;
+  }
+  table td {
+    border: 5px solid white; 
+  }
+  table tr:first-child td {
+    border-top: 0;
+  }
+  table tr td:first-child {
+    border-left: 0;
+  }
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  table tr td:last-child {
+    border-right: 0;
+  }
+
